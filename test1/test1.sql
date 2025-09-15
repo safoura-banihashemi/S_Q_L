@@ -59,6 +59,8 @@ WHERE city = 'Rome';
 SELECT * FROM customers;
 SELECT city, age FROM customers;
 
+DROP TABLE customers
+
 -- Delete the whole table
 --DROP TABLE cars;
 --SELECT * FROM cars;
