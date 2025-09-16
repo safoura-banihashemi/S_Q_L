@@ -1,4 +1,4 @@
-CREATE TABLE customers (
+CREATE TABLE IF NOT EXISTS customers (
   customer_id SERIAL NOT NULL PRIMARY KEY,
   customer_name VARCHAR(255),
   contact_name VARCHAR(255),
@@ -101,3 +101,5 @@ VALUES
   ('White Clover Markets', 'Karl Jablonski', '305 - 14th Ave. S. Suite 3B', 'Seattle', '98128', 'USA'),
   ('Wilman Kala', 'Matti Karttunen', 'Keskuskatu 45', 'Helsinki', '21240', 'Finland'),
   ('Wolski', 'Zbyszek', 'ul. Filtrowa 68', 'Walla', '01-012', 'Poland');
+
+SELECT * FROM customers;

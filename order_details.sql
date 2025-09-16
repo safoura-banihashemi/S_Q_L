@@ -1,4 +1,4 @@
-CREATE TABLE order_details (
+CREATE TABLE IF NOT EXISTS order_details (
   order_detail_id SERIAL NOT NULL PRIMARY KEY,
   order_id INT,
   product_id INT,
@@ -2162,3 +2162,5 @@ VALUES
   (11077, 73, 2),
   (11077, 75, 4),
   (11077, 77, 2);
+
+SELECT * FROM order_details;

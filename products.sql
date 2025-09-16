@@ -1,5 +1,5 @@
-CREATE TABLE products (
-  product_id SERIAL NOT NULL PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS products (
+  product_id INT,
   product_name VARCHAR(255),
   category_id INT,
   unit VARCHAR(255),
@@ -85,3 +85,7 @@ VALUES
   (75, 'Rhenbreu Klosterbier', 1, '24 - 0.5 l bottles', 7.75),
   (76, 'Lakkalikeeri', 1, '500 ml ', 18),
   (77, 'Original Frankfurter grune Soae', 2, '12 boxes', 13);
+
+
+
+SELECT * FROM products;

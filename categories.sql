@@ -1,4 +1,4 @@
-CREATE TABLE categories(
+CREATE TABLE IF NOT EXISTS categories(
     category_id SERIAL NOT NULL PRIMARY KEY, -- Automatically fill by SQL makes this column the unique identifier 
     category_name VARCHAR(255),
     description VARCHAR(255)
@@ -14,3 +14,5 @@ VALUES
     ('Meat/Poultry', 'Prepared meats'),
     ('Produce', 'Dried fruit and bean curd'),
     ('Seafood', 'Seaweed and fish');
+
+SELECT * FROM categories;

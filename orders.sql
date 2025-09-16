@@ -1,5 +1,5 @@
-CREATE TABLE orders (
-  order_id SERIAL NOT NULL PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS orders (
+  order_id INT,
   customer_id INT,
   order_date DATE
 );
@@ -836,3 +836,5 @@ VALUES
   (11075, 68, '2023-05-06'),
   (11076, 9, '2023-05-06'),
   (11077, 65, '2023-05-06');
+
+SELECT * FROM orders;
