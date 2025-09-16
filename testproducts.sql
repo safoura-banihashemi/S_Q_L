@@ -1,4 +1,4 @@
-CREATE TABLE testproducts (
+CREATE TABLE IF NOT EXISTS testproducts (
   testproduct_id SERIAL NOT NULL PRIMARY KEY,
   product_name VARCHAR(255),
   category_id INT
@@ -16,3 +16,5 @@ VALUES
   ('Ellas Special Salmon', 8),
   ('Roberts Rich Spaghetti', 5),
   ('Mias Popular Ice', 14);
+
+SELECT * FROM testproducts;
